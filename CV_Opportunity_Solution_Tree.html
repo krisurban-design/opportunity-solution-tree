@@ -13,14 +13,18 @@
     color: #1a1a2e;
     min-width: 100%;
     overflow-x: auto;
+    padding-top: 88px;
   }
 
   .page-header {
     background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
     color: white;
     padding: 28px 40px 24px;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     z-index: 100;
     display: flex;
     align-items: center;
@@ -441,6 +445,20 @@
   .opp-9 .priority-tag { background: #e0f2fe; color: #0369a1; }
   .opp-9 .signal-badge { background: #e0f2fe; color: #0369a1; }
 
+  /* Opp 10 — Hands-Free Operation — Warm Orange */
+  .opp-10 .opportunity-card { border-top-color: #f97316; }
+  .opp-10 .label { color: #9a3412; }
+  .opp-10 .opp-connector-top,
+  .opp-10 .opp-connector-bottom { background: #f97316; }
+  .opp-10 .solution-connector-top,
+  .opp-10 .solution-connector-bottom { background: #fb923c; }
+  .opp-10 .solution-card { border-left-color: #fb923c; }
+  .opp-10 .solution-card .s-label { color: #9a3412; }
+  .opp-10 .experiment-card { border-color: #fdba74; }
+  .opp-10 .experiment-card .e-label { color: #9a3412; }
+  .opp-10 .priority-tag { background: #fff7ed; color: #9a3412; }
+  .opp-10 .signal-badge { background: #fff7ed; color: #9a3412; }
+
   /* ── TREE STEM (outcome → opportunity row) ── */
   .stem-wrapper {
     display: flex;
@@ -692,8 +710,9 @@
         <div class="label">📋 Opp 1 — Compliance</div>
         <h3>Photo evidence is captured but never meaningfully verified</h3>
         <div class="summary">Managers can't review every inspection photo at scale. Non-compliant evidence is routinely missed. 'Passed' inspections don't reflect real conditions.</div>
-        <span class="signal-badge">👥 15+ customers</span>
-        <span class="signal-badge">💰 High ACV</span>
+        <span class="signal-badge">💰 AusPost $86K</span>
+        <span class="signal-badge">💰 Husqvarna $82K</span>
+        <span class="signal-badge">👥 Prince · DEKRA · Toyota</span>
         <div class="priority-tag">🔥 High Priority</div>
         <div style="margin-top:5px;">
           <span class="tier-tag tier-2">Tier 2</span>
@@ -842,7 +861,8 @@
         <h3>Reporting a visual issue requires too much manual effort</h3>
         <div class="summary">Frontline workers must write full issue forms from scratch. The photo they just took doesn't fill any field. Issues go unreported or are inconsistently documented.</div>
         <span class="signal-badge">✅ CEA live</span>
-        <span class="signal-badge">👥 6 customers</span>
+        <span class="signal-badge">🎙️ Voice: in CEA milestone</span>
+        <span class="signal-badge">👥 Coles · Thermosash · CBG · AusPost</span>
         <div class="priority-tag">✅ In Progress</div>
         <div style="margin-top:5px;">
           <span class="tier-tag tier-1">Tier 1</span>
@@ -916,8 +936,9 @@
         <div class="label">🕐 Opp 4 — Continuity</div>
         <h3>Inspection photos have no continuity between visits</h3>
         <div class="summary">Each inspection is a fresh snapshot. No way to see what the site/asset looked like last time, identify deterioration, or track conditions over time. Reactive capex instead of planned.</div>
+        <span class="signal-badge">💰 Network Rail $363K</span>
+        <span class="signal-badge">💰 Siemens $227K</span>
         <span class="signal-badge">👥 Royal Caribbean</span>
-        <span class="signal-badge">💰 $363K NR</span>
         <div class="priority-tag">🔍 Explore</div>
         <div style="margin-top:5px;">
           <span class="tier-tag tier-2">Tier 2</span>
@@ -989,7 +1010,8 @@
         <div class="label">📁 Opp 5 — Organisation</div>
         <h3>Photo organisation blocks reporting and rollouts</h3>
         <div class="summary">Inspections export 800+ randomly named files with no link to defect, question, or asset. Manual sorting hours are a 'stopper' preventing full rollout of inspection programs.</div>
-        <span class="signal-badge">💰 $1M IKEA</span>
+        <span class="signal-badge">💰 IKEA $1M</span>
+        <span class="signal-badge">💰 DHL $646K</span>
         <span class="signal-badge">🚫 Stopper</span>
         <div class="priority-tag">⚡ Med Priority</div>
         <div style="margin-top:5px;">
@@ -1136,8 +1158,8 @@
         <div class="label">⚠️ Opp 7 — Hazards</div>
         <h3>Workers can't get expert-level hazard identification without a specialist present</h3>
         <div class="summary">Less experienced workers miss risks that experts would catch immediately. Competitors Safety Pulse and Echo Portal are actively winning deals on this capability today.</div>
-        <span class="signal-badge">🏆 Competitive</span>
-        <span class="signal-badge">💰 $121K</span>
+        <span class="signal-badge">💰 nextcenturi $121K "game changer"</span>
+        <span class="signal-badge">🏆 Safety Pulse · Echo Portal winning</span>
         <div class="priority-tag">⚡ High Competitive Risk</div>
         <div style="margin-top:5px;">
           <span class="tier-tag tier-1">Tier 1</span>
@@ -1285,8 +1307,9 @@
         <div class="label">🎙️ Opp 9 — Capture Speed</div>
         <h3>Inspections are slow because workers must stop, type, and navigate — voice &amp; photo shortcuts are missing</h3>
         <div class="summary">Workers conducting walkthroughs spend more time documenting than observing. Voice narration and instant photo-to-finding capture could cut inspection time and increase evidence completeness and compliance rates.</div>
-        <span class="signal-badge">⏱️ Speed gap</span>
-        <span class="signal-badge">🏆 Competitive</span>
+        <span class="signal-badge">🚨 Thermosash deal risk</span>
+        <span class="signal-badge">🏆 GoAudits · Keen Research</span>
+        <span class="signal-badge">👥 Coles · nextcenturi</span>
         <div class="priority-tag">🔥 High Priority</div>
         <div style="margin-top:5px;">
           <span class="tier-tag tier-1">Tier 1</span>
@@ -1352,6 +1375,78 @@
 
       </div>
     </div><!-- /opp-9 -->
+
+    <!-- ─────────────── OPP 10: Hands-Free Operation ─────────────── -->
+    <div class="opportunity-col opp-10">
+      <div class="opp-connector-top"></div>
+      <div class="opportunity-card">
+        <div class="label">🧤 Opp 10 — Hands-Free</div>
+        <h3>Workers in PPE, gloves, or at height cannot type — and SafetyCulture is physically unusable for them today</h3>
+        <div class="summary">For workers at height, wearing gloves, or carrying equipment, typing into a phone is not just slow — it is impossible. Voice must be the only viable input modality. This is a physical access problem, not a preference.</div>
+        <span class="signal-badge">🏗️ BAI Communications — gloved tower workers</span>
+        <span class="signal-badge">🚒 Fire Rescue Victoria — PPE, hands occupied</span>
+        <span class="signal-badge">📱 iOS P0: voice-to-text for PPE scenarios</span>
+        <div class="priority-tag">🔍 Discovery</div>
+        <div style="margin-top:5px;">
+          <span class="tier-tag tier-1">Tier 1</span>
+        </div>
+        <div class="jtbd-row">
+          <span class="jtbd-label">JTBD</span>
+          <div class="jtbd-text">"When I'm working with gloves on, wearing PPE, or at height, I can't type — help me capture findings and complete inspections using only voice."</div>
+        </div>
+      </div>
+      <div class="opp-connector-bottom" style="background:#fb923c;height:20px;width:2px;"></div>
+
+      <div class="section-label" style="font-size:9px; margin-bottom:6px;">Solutions</div>
+      <div style="display:flex;flex-direction:column;gap:8px;width:100%;">
+
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div class="solution-connector-top" style="background:#fb923c;height:14px;width:2px;"></div>
+          <div class="solution-card opp-10" style="width:100%;">
+            <div class="s-label">Solution A</div>
+            <div class="s-title">Hands-free voice narration — one-tap mic, speak findings, AI fills the form</div>
+            <span class="s-status status-explore">Explore</span>
+            <span class="bet-label bet-small">Small Bet</span>
+          </div>
+          <div class="solution-connector-bottom" style="background:#fb923c;height:12px;width:2px;"></div>
+          <div class="experiment-card opp-10">
+            <span class="e-label">🧪 Experiment</span>
+            Direct probe Q6e with BAI Communications, Fire Rescue Victoria participants. Do they currently skip documentation entirely due to PPE? Would single-tap voice change that? Test in simulated gloved conditions.
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div class="solution-connector-top" style="background:#fb923c;height:14px;width:2px;"></div>
+          <div class="solution-card opp-10" style="width:100%;">
+            <div class="s-label">Solution B</div>
+            <div class="s-title">Wearable or Bluetooth trigger — voice-activate SC without touching the screen</div>
+            <span class="s-status status-explore">Explore</span>
+            <span class="bet-label bet-medium">Medium Bet</span>
+          </div>
+          <div class="solution-connector-bottom" style="background:#fb923c;height:12px;width:2px;"></div>
+          <div class="experiment-card opp-10">
+            <span class="e-label">🧪 Experiment</span>
+            Interview: which industries have the highest gloves/PPE density? Map the hardware constraints. Is the phone even accessible, or does this require a watch/earpiece integration path?
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div class="solution-connector-top" style="background:#fb923c;height:14px;width:2px;"></div>
+          <div class="solution-card opp-10" style="width:100%;">
+            <div class="s-label">Solution C</div>
+            <div class="s-title">Always-on ambient mode — AI listens and logs as the worker moves through site</div>
+            <span class="s-status status-explore">Explore</span>
+            <span class="bet-label bet-large">Large Bet</span>
+          </div>
+          <div class="solution-connector-bottom" style="background:#fb923c;height:12px;width:2px;"></div>
+          <div class="experiment-card opp-10">
+            <span class="e-label">🧪 Experiment</span>
+            Long-term vision: Athena-style ambient listening (Gemini + LiveKit) running in background during site walkthrough. Requires robust STT in industrial noise (RNNoise + Deepgram Nova-3 + Whisper.cpp offline). Interview: would workers accept always-on listening at work?
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /opp-10 -->
 
   </div><!-- /opportunities row -->
 
