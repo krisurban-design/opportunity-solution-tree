@@ -1306,17 +1306,21 @@
       <div class="opportunity-card">
         <div class="label">🎙️ Opp 9 — Capture Speed</div>
         <h3>Inspections are slow because workers must stop, type, and navigate — voice &amp; photo shortcuts are missing</h3>
-        <div class="summary">Workers conducting walkthroughs spend more time documenting than observing. Voice narration and instant photo-to-finding capture could cut inspection time and increase evidence completeness and compliance rates.</div>
+        <div class="summary">Workers conducting walkthroughs spend more time documenting than observing. A key structural problem: templates force sequential completion, but workers observe in physical walk order — voice + AI decouples the two, letting workers narrate freely while AI routes to the right fields. New use case confirmed: ambient meeting recording (toolbox talks, site pre-starts) → auto-populated templates.</div>
         <span class="signal-badge">🚨 Thermosash deal risk</span>
         <span class="signal-badge">🏆 GoAudits · Keen Research</span>
         <span class="signal-badge">👥 Coles · nextcenturi</span>
+        <span class="signal-badge">🚇 Transport for London — "game changer" ×2</span>
+        <span class="signal-badge">🎙️ qal.com.au — ambient walk narration → template</span>
         <div class="priority-tag">🔥 High Priority</div>
         <div style="margin-top:5px;">
           <span class="tier-tag tier-1">Tier 1</span>
           <span class="domain-badge db-compliance">Compliance Copilot</span>
           <span class="domain-badge db-quality">Quality Copilot</span>
           <span class="hyp-tag">H9</span>
+          <span class="hyp-tag">H10</span>
           <span class="scenario-tag">Scenario A</span>
+          <span class="scenario-tag">Scenario B</span>
         </div>
         <div class="jtbd-row">
           <span class="jtbd-label">JTBD</span>
@@ -1339,7 +1343,7 @@
           <div class="solution-connector-bottom" style="background:#38bdf8;height:12px;width:2px;"></div>
           <div class="experiment-card opp-9">
             <span class="e-label">🧪 Experiment</span>
-            Concept test with field-heavy customers (Coles, nextcenturi): would voice narration during walkthrough change completion rate? Does AI transcription accuracy meet the bar? Test in noisy environments.
+            Concept test with field-heavy customers (Coles, nextcenturi, Transport for London, qal.com.au): would voice narration during walkthrough change completion rate? Does AI transcription accuracy meet the bar? Test in noisy environments. Key probe: does free-form narration in walk order — mapped to template fields by AI — reduce friction vs sequential form entry?
           </div>
         </div>
 
@@ -1373,6 +1377,21 @@
           </div>
         </div>
 
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div class="solution-connector-top" style="background:#38bdf8;height:14px;width:2px;"></div>
+          <div class="solution-card opp-9" style="width:100%;">
+            <div class="s-label">Solution D</div>
+            <div class="s-title">Ambient meeting recording → template auto-fill (toolbox talks, pre-starts)</div>
+            <span class="s-status status-explore">Explore</span>
+            <span class="bet-label bet-large">Large Bet</span>
+          </div>
+          <div class="solution-connector-bottom" style="background:#38bdf8;height:12px;width:2px;"></div>
+          <div class="experiment-card opp-9">
+            <span class="e-label">🧪 Experiment</span>
+            Thermosash use case: record full toolbox talk / site pre-start, AI auto-populates the relevant template. SC "Voice-to-Voice hackathon" built a proof of concept. Interview: do safety managers currently transcribe meetings manually? What's the time cost? Trust question: what level of AI accuracy is needed before they'd stop reviewing every field?
+          </div>
+        </div>
+
       </div>
     </div><!-- /opp-9 -->
 
@@ -1382,13 +1401,19 @@
       <div class="opportunity-card">
         <div class="label">🧤 Opp 10 — Hands-Free</div>
         <h3>Workers in PPE, gloves, or at height cannot type — and SafetyCulture is physically unusable for them today</h3>
-        <div class="summary">For workers at height, wearing gloves, or carrying equipment, typing into a phone is not just slow — it is impossible. Voice must be the only viable input modality. This is a physical access problem, not a preference.</div>
+        <div class="summary">For workers at height, wearing gloves, or carrying equipment, typing into a phone is not just slow — it is impossible. Voice must be the only viable input modality. This is a physical access problem, not a preference. <strong>Competitive urgency:</strong> Ideagen Mazlan shipped explicit PPE voice (Dec 2025) with L'Oréal, NASA, Tesla as reference customers. SC has named customers waiting. 90% paper persistence persists in PPE-heavy environments despite digital rollout — voice is the missing unlock.</div>
         <span class="signal-badge">🏗️ BAI Communications — gloved tower workers</span>
         <span class="signal-badge">🚒 Fire Rescue Victoria — PPE, hands occupied</span>
         <span class="signal-badge">📱 iOS P0: voice-to-text for PPE scenarios</span>
+        <span class="signal-badge">🚇 Transport for London — confirmed feasibility blocker</span>
+        <span class="signal-badge">💰 $15.3M · 45 customers (Twine Dec 2025–Mar 2026)</span>
+        <span class="signal-badge">⚠️ Ideagen Mazlan shipped PPE voice — Dec 2025</span>
         <div class="priority-tag">🔍 Discovery</div>
+        <div class="priority-tag" style="background:#fef2f2;color:#b91c1c;margin-top:4px;">⚠️ Competitor shipped — accelerate</div>
         <div style="margin-top:5px;">
           <span class="tier-tag tier-1">Tier 1</span>
+          <span class="hyp-tag">H11</span>
+          <span class="scenario-tag">Scenario A</span>
         </div>
         <div class="jtbd-row">
           <span class="jtbd-label">JTBD</span>
@@ -1411,7 +1436,7 @@
           <div class="solution-connector-bottom" style="background:#fb923c;height:12px;width:2px;"></div>
           <div class="experiment-card opp-10">
             <span class="e-label">🧪 Experiment</span>
-            Direct probe Q6e with BAI Communications, Fire Rescue Victoria participants. Do they currently skip documentation entirely due to PPE? Would single-tap voice change that? Test in simulated gloved conditions.
+            Direct probe Q6e with BAI Communications, Fire Rescue Victoria, and Transport for London participants. Do they currently skip documentation entirely due to PPE? Would single-tap voice change that? Test in simulated gloved conditions. Add trust/accuracy probe: if transcription gets it wrong 1-in-5 times in noise, would they still use it? Note: TfL flagged abuse risk (vague dictation) — test fidelity guardrails in prototype.
           </div>
         </div>
 
