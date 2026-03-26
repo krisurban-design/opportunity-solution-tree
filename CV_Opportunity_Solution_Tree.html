@@ -459,6 +459,20 @@
   .opp-10 .priority-tag { background: #fff7ed; color: #9a3412; }
   .opp-10 .signal-badge { background: #fff7ed; color: #9a3412; }
 
+  /* Opp 11 — Sequential Mismatch — emerald */
+  .opp-11 .opportunity-card { border-top-color: #10b981; }
+  .opp-11 .label { color: #065f46; }
+  .opp-11 .opp-connector-top,
+  .opp-11 .opp-connector-bottom { background: #10b981; }
+  .opp-11 .solution-connector-top,
+  .opp-11 .solution-connector-bottom { background: #34d399; }
+  .opp-11 .solution-card { border-left-color: #34d399; }
+  .opp-11 .solution-card .s-label { color: #065f46; }
+  .opp-11 .experiment-card { border-color: #6ee7b7; }
+  .opp-11 .experiment-card .e-label { color: #065f46; }
+  .opp-11 .priority-tag { background: #ecfdf5; color: #065f46; }
+  .opp-11 .signal-badge { background: #ecfdf5; color: #065f46; }
+
   /* ── TREE STEM (outcome → opportunity row) ── */
   .stem-wrapper {
     display: flex;
@@ -1472,6 +1486,82 @@
 
       </div>
     </div><!-- /opp-10 -->
+
+    <!-- ─────────────── OPP 11: Sequential Mismatch ─────────────── -->
+    <div class="opportunity-col opp-11">
+      <div class="opp-connector-top"></div>
+      <div class="opportunity-card">
+        <div class="label">🔀 Opp 11 — Sequential Mismatch</div>
+        <h3>Inspection templates are sequential but field observation is not — workers are forced to fight the form</h3>
+        <div class="summary">Digital inspection forms force workers to answer questions in template order — but physical sites don't work that way. Workers notice issues in the order they encounter them, not the order a template was built. The current flow forces scrolling through entire templates or completing findings from memory after the walkthrough. At scale (200-site facilities managers, 4,000 weekly routes), this sequential mismatch compounds inspection time and drives abandonment. Voice changes this entirely: workers narrate observations in physical order and AI maps each to the correct template field — decoupling physical observation from digital form order. This is a structural redesign of how inspections work, not a convenience feature.</div>
+        <span class="signal-badge">📊 Twine intelligence — Dec 2025–Mar 2026</span>
+        <span class="signal-badge">🎙️ Josh Roby, qal.com.au — "just an admin exercise"</span>
+        <span class="signal-badge">🏢 200-site facilities managers · 4,000 weekly routes</span>
+        <div class="priority-tag">🔍 Discovery</div>
+        <div style="margin-top:5px;">
+          <span class="tier-tag tier-1">Tier 1</span>
+          <span class="domain-badge db-compliance">Compliance Copilot</span>
+          <span class="domain-badge db-quality">Quality Copilot</span>
+          <span class="hyp-tag">H12</span>
+          <span class="scenario-tag">Scenario B</span>
+        </div>
+        <div class="jtbd-row">
+          <span class="jtbd-label">JTBD</span>
+          <div class="jtbd-text">"When I'm walking a site, let me report what I see in the order I see it — don't make me hunt through a form to find the right question."</div>
+        </div>
+      </div>
+      <div class="opp-connector-bottom" style="background:#34d399;height:20px;width:2px;"></div>
+
+      <div class="section-label" style="font-size:9px; margin-bottom:6px;">Solutions</div>
+      <div style="display:flex;flex-direction:column;gap:8px;width:100%;">
+
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div class="solution-connector-top" style="background:#34d399;height:14px;width:2px;"></div>
+          <div class="solution-card opp-11" style="width:100%;">
+            <div class="s-label">Solution A</div>
+            <div class="s-title">Voice-to-field AI routing — narrate in walk order, AI maps to template fields</div>
+            <span class="s-status status-explore">Explore</span>
+            <span class="bet-label bet-medium">Medium Bet</span>
+          </div>
+          <div class="solution-connector-bottom" style="background:#34d399;height:12px;width:2px;"></div>
+          <div class="experiment-card opp-11">
+            <span class="e-label">🧪 Experiment</span>
+            Prototype test: give workers a 20-question template and a simulated site walk. Compare completion time and accuracy between sequential form entry vs free-form voice narration with AI field-mapping. Key metrics: time-to-complete, field accuracy rate, worker preference. Test with facilities managers running 200+ site portfolios. Does AI correctly route "crack in north wall panel" to the structural integrity section?
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div class="solution-connector-top" style="background:#34d399;height:14px;width:2px;"></div>
+          <div class="solution-card opp-11" style="width:100%;">
+            <div class="s-label">Solution B</div>
+            <div class="s-title">Smart template reordering — AI re-sequences questions based on GPS / floor plan position</div>
+            <span class="s-status status-explore">Explore</span>
+            <span class="bet-label bet-large">Large Bet</span>
+          </div>
+          <div class="solution-connector-bottom" style="background:#34d399;height:12px;width:2px;"></div>
+          <div class="experiment-card opp-11">
+            <span class="e-label">🧪 Experiment</span>
+            Interview: do workers follow a consistent physical route on repeated inspections? If yes, can we learn the walk pattern and reorder template questions to match? Probe with 4,000-weekly-route customers. Feasibility: does SC have location/zone data granular enough to map questions to physical areas?
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div class="solution-connector-top" style="background:#34d399;height:14px;width:2px;"></div>
+          <div class="solution-card opp-11" style="width:100%;">
+            <div class="s-label">Solution C</div>
+            <div class="s-title">Post-walk AI reconciliation — complete walkthrough first, AI builds the inspection from notes</div>
+            <span class="s-status status-explore">Explore</span>
+            <span class="bet-label bet-medium">Medium Bet</span>
+          </div>
+          <div class="solution-connector-bottom" style="background:#34d399;height:12px;width:2px;"></div>
+          <div class="experiment-card opp-11">
+            <span class="e-label">🧪 Experiment</span>
+            Concept test: worker does an unstructured site walk, captures voice notes and photos freely. AI assembles a completed template draft post-walk for review. Interview qal.com.au and Twine-flagged customers: would they trust AI to populate 80% of an inspection from raw notes? What review/edit workflow is needed? Does this reduce the "admin exercise" feeling Josh Roby described?
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /opp-11 -->
 
   </div><!-- /opportunities row -->
 
