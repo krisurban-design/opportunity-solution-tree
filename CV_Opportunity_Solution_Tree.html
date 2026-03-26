@@ -473,6 +473,34 @@
   .opp-11 .priority-tag { background: #ecfdf5; color: #065f46; }
   .opp-11 .signal-badge { background: #ecfdf5; color: #065f46; }
 
+  /* Opp 12 — CCTV Integration — indigo */
+  .opp-12 .opportunity-card { border-top-color: #6366f1; }
+  .opp-12 .label { color: #3730a3; }
+  .opp-12 .opp-connector-top,
+  .opp-12 .opp-connector-bottom { background: #6366f1; }
+  .opp-12 .solution-connector-top,
+  .opp-12 .solution-connector-bottom { background: #818cf8; }
+  .opp-12 .solution-card { border-left-color: #818cf8; }
+  .opp-12 .solution-card .s-label { color: #3730a3; }
+  .opp-12 .experiment-card { border-color: #a5b4fc; }
+  .opp-12 .experiment-card .e-label { color: #3730a3; }
+  .opp-12 .priority-tag { background: #eef2ff; color: #3730a3; }
+  .opp-12 .signal-badge { background: #eef2ff; color: #3730a3; }
+
+  /* Opp 13 — Asset Recognition — rose */
+  .opp-13 .opportunity-card { border-top-color: #f43f5e; }
+  .opp-13 .label { color: #9f1239; }
+  .opp-13 .opp-connector-top,
+  .opp-13 .opp-connector-bottom { background: #f43f5e; }
+  .opp-13 .solution-connector-top,
+  .opp-13 .solution-connector-bottom { background: #fb7185; }
+  .opp-13 .solution-card { border-left-color: #fb7185; }
+  .opp-13 .solution-card .s-label { color: #9f1239; }
+  .opp-13 .experiment-card { border-color: #fda4af; }
+  .opp-13 .experiment-card .e-label { color: #9f1239; }
+  .opp-13 .priority-tag { background: #fff1f2; color: #9f1239; }
+  .opp-13 .signal-badge { background: #fff1f2; color: #9f1239; }
+
   /* ── TREE STEM (outcome → opportunity row) ── */
   .stem-wrapper {
     display: flex;
@@ -1562,6 +1590,160 @@
 
       </div>
     </div><!-- /opp-11 -->
+
+    <!-- ─────────────── OPP 12: CCTV Integration ─────────────── -->
+    <div class="opportunity-col opp-12">
+      <div class="opp-connector-top"></div>
+      <div class="opportunity-card">
+        <div class="label">📹 Opp 12 — CCTV Integration</div>
+        <h3>Fixed cameras capture safety incidents every day but none of it flows into SafetyCulture workflows</h3>
+        <div class="summary">Organisations have extensive CCTV infrastructure — yard cameras, building surveillance, elevator and HVAC monitoring — that continuously captures safety-relevant events. But this footage sits in siloed video systems with no connection to SC. When a near-miss, spill, or PPE violation is caught on camera, someone must manually watch the footage, then separately create an issue in SC. At scale this doesn't happen: incidents go unrecorded, patterns go undetected, and the organisation's most comprehensive visual evidence source is completely disconnected from its safety management system. CV-powered camera integration could automatically detect incidents in video feeds and generate SC issues, actions, or alerts — turning passive surveillance into an active safety loop.</div>
+        <span class="signal-badge">🛒 Coles — yard CCTV incidents unlinked</span>
+        <span class="signal-badge">🍽️ Marley Spoon — kitchen/warehouse cameras</span>
+        <span class="signal-badge">🏗️ Oliver Aponte — HVAC/elevator monitoring</span>
+        <span class="signal-badge">📦 CHEP — warehouse/yard surveillance</span>
+        <div class="priority-tag">🔍 Discovery</div>
+        <div style="margin-top:5px;">
+          <span class="tier-tag tier-2">Tier 2</span>
+          <span class="domain-badge db-compliance">Compliance Copilot</span>
+          <span class="domain-badge db-operations">Operations Copilot</span>
+          <span class="hyp-tag">H13</span>
+          <span class="scenario-tag">Scenario B</span>
+        </div>
+        <div class="jtbd-row">
+          <span class="jtbd-label">JTBD</span>
+          <div class="jtbd-text">"When a safety incident is captured on our existing cameras, automatically create an issue in SafetyCulture so nothing caught on film goes unrecorded."</div>
+        </div>
+      </div>
+      <div class="opp-connector-bottom" style="background:#818cf8;height:20px;width:2px;"></div>
+
+      <div class="section-label" style="font-size:9px; margin-bottom:6px;">Solutions</div>
+      <div style="display:flex;flex-direction:column;gap:8px;width:100%;">
+
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div class="solution-connector-top" style="background:#818cf8;height:14px;width:2px;"></div>
+          <div class="solution-card opp-12" style="width:100%;">
+            <div class="s-label">Solution A</div>
+            <div class="s-title">CCTV-to-issue pipeline — CV detects incidents in camera feeds and auto-creates SC issues</div>
+            <span class="s-status status-explore">Explore</span>
+            <span class="bet-label bet-large">Large Bet</span>
+          </div>
+          <div class="solution-connector-bottom" style="background:#818cf8;height:12px;width:2px;"></div>
+          <div class="experiment-card opp-12">
+            <span class="e-label">🧪 Experiment</span>
+            Interview Coles, Marley Spoon, and Oliver Aponte: how many safety-relevant events does CCTV capture per week that never become SC issues? What's the current workflow — does anyone review footage proactively, or only after an incident? Map the camera infrastructure: IP cameras, NVR systems, cloud vs on-prem. Feasibility: can we access RTSP/ONVIF feeds, or do we need vendor partnerships (Milestone, Genetec, Verkada)?
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div class="solution-connector-top" style="background:#818cf8;height:14px;width:2px;"></div>
+          <div class="solution-card opp-12" style="width:100%;">
+            <div class="s-label">Solution B</div>
+            <div class="s-title">Clip-and-attach — manually flag a CCTV moment and push it into SC as evidence</div>
+            <span class="s-status status-explore">Explore</span>
+            <span class="bet-label bet-small">Small Bet</span>
+          </div>
+          <div class="solution-connector-bottom" style="background:#818cf8;height:12px;width:2px;"></div>
+          <div class="experiment-card opp-12">
+            <span class="e-label">🧪 Experiment</span>
+            Lightweight MVP: SC integration that lets a safety manager clip a CCTV timestamp and push the frame/clip into an SC issue or action. Test with CHEP and Coles — would a simple "clip to SC" button in their existing VMS reduce the gap between incident capture and documentation? What's the current time from CCTV observation to SC issue creation?
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div class="solution-connector-top" style="background:#818cf8;height:14px;width:2px;"></div>
+          <div class="solution-card opp-12" style="width:100%;">
+            <div class="s-label">Solution C</div>
+            <div class="s-title">Zone-based alerting — CV monitors defined areas and triggers SC actions on anomaly detection</div>
+            <span class="s-status status-explore">Explore</span>
+            <span class="bet-label bet-large">Large Bet</span>
+          </div>
+          <div class="solution-connector-bottom" style="background:#818cf8;height:12px;width:2px;"></div>
+          <div class="experiment-card opp-12">
+            <span class="e-label">🧪 Experiment</span>
+            Prototype: define safety zones in camera view (e.g. forklift exclusion zone, PPE-required area). CV model detects violations and auto-generates SC alerts. Test with Oliver Aponte HVAC/elevator monitoring — are there repeatable zone-based safety rules? Probe: what false-positive rate is tolerable before users disable alerts? Interview Marley Spoon on kitchen safety zones.
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /opp-12 -->
+
+    <!-- ─────────────── OPP 13: Asset Recognition ─────────────── -->
+    <div class="opportunity-col opp-13">
+      <div class="opp-connector-top"></div>
+      <div class="opportunity-card">
+        <div class="label">🏷️ Opp 13 — Asset Recognition</div>
+        <h3>Workers can't identify asset types from photos — manual tagging is slow, inconsistent, and often skipped</h3>
+        <div class="summary">When workers photograph equipment, infrastructure, or site elements during inspections, the system has no idea what it's looking at. Asset type identification relies entirely on manual entry — workers must select from dropdown lists, type asset names, or scan QR codes that may not exist. This creates incomplete asset records, inconsistent naming, and missed linkages between inspections and the assets they cover. At scale, the problem compounds: thousands of photos of pumps, panels, valves, and vehicles sit unclassified. CV-powered asset recognition could identify equipment type from the photo itself — auto-tagging, linking to asset registers, and enabling fleet-wide condition tracking without manual data entry.</div>
+        <span class="signal-badge">📦 CHEP — pallet/asset tracking at scale</span>
+        <span class="signal-badge">🏗️ Oliver Aponte — HVAC/elevator asset ID</span>
+        <span class="signal-badge">🛒 Coles — equipment across 800+ stores</span>
+        <span class="signal-badge">📢 Broadly requested across customer base</span>
+        <div class="priority-tag">🔍 Discovery</div>
+        <div style="margin-top:5px;">
+          <span class="tier-tag tier-2">Tier 2</span>
+          <span class="domain-badge db-operations">Operations Copilot</span>
+          <span class="domain-badge db-quality">Quality Copilot</span>
+          <span class="hyp-tag">H14</span>
+          <span class="scenario-tag">Scenario A</span>
+        </div>
+        <div class="jtbd-row">
+          <span class="jtbd-label">JTBD</span>
+          <div class="jtbd-text">"When I photograph a piece of equipment on site, automatically identify what type of asset it is so I don't have to search through lists or type it manually."</div>
+        </div>
+      </div>
+      <div class="opp-connector-bottom" style="background:#fb7185;height:20px;width:2px;"></div>
+
+      <div class="section-label" style="font-size:9px; margin-bottom:6px;">Solutions</div>
+      <div style="display:flex;flex-direction:column;gap:8px;width:100%;">
+
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div class="solution-connector-top" style="background:#fb7185;height:14px;width:2px;"></div>
+          <div class="solution-card opp-13" style="width:100%;">
+            <div class="s-label">Solution A</div>
+            <div class="s-title">Photo-to-asset-type classifier — CV identifies equipment category from inspection photo</div>
+            <span class="s-status status-explore">Explore</span>
+            <span class="bet-label bet-medium">Medium Bet</span>
+          </div>
+          <div class="solution-connector-bottom" style="background:#fb7185;height:12px;width:2px;"></div>
+          <div class="experiment-card opp-13">
+            <span class="e-label">🧪 Experiment</span>
+            Build a classifier prototype using SC's existing 2.3B image corpus. Start with the top 20 most-inspected asset types (fire extinguishers, electrical panels, HVAC units, forklifts, exit signs). Test with CHEP pallet images and Oliver Aponte HVAC photos. Key metric: top-3 classification accuracy. Interview: what granularity do customers need — "fire extinguisher" vs "ABC dry chemical 4.5kg"? Is category-level enough to be useful?
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div class="solution-connector-top" style="background:#fb7185;height:14px;width:2px;"></div>
+          <div class="solution-card opp-13" style="width:100%;">
+            <div class="s-label">Solution B</div>
+            <div class="s-title">Auto-link to asset register — recognised asset type maps to customer's asset hierarchy</div>
+            <span class="s-status status-explore">Explore</span>
+            <span class="bet-label bet-medium">Medium Bet</span>
+          </div>
+          <div class="solution-connector-bottom" style="background:#fb7185;height:12px;width:2px;"></div>
+          <div class="experiment-card opp-13">
+            <span class="e-label">🧪 Experiment</span>
+            Interview Coles and CHEP: do they maintain an asset register in SC today? How do they currently link inspection findings to specific assets — QR codes, manual selection, or not at all? Prototype: after CV identifies "electrical panel", suggest matching assets from the customer's register. Test whether auto-linking reduces inspection time and improves asset record completeness. What happens when the same asset type appears multiple times on one site?
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div class="solution-connector-top" style="background:#fb7185;height:14px;width:2px;"></div>
+          <div class="solution-card opp-13" style="width:100%;">
+            <div class="s-label">Solution C</div>
+            <div class="s-title">Fleet-wide condition tracking — aggregate recognised asset photos to surface deterioration patterns</div>
+            <span class="s-status status-explore">Explore</span>
+            <span class="bet-label bet-large">Large Bet</span>
+          </div>
+          <div class="solution-connector-bottom" style="background:#fb7185;height:12px;width:2px;"></div>
+          <div class="experiment-card opp-13">
+            <span class="e-label">🧪 Experiment</span>
+            Builds on Opp 4 (Visual Continuity) and Solution A above. Once assets are recognised and linked, can we aggregate condition photos across a fleet to answer "which HVAC units across all sites show corrosion?" Interview Oliver Aponte: would fleet-level asset condition visibility change maintenance scheduling? Test with CHEP: across all warehouses, which pallet types show the most damage? Requires Solution A accuracy ≥85% to be viable at fleet scale.
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /opp-13 -->
 
   </div><!-- /opportunities row -->
 
